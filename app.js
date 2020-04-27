@@ -71,11 +71,10 @@ function anyBodyParser(req, res, next) {
 }
 app.use(anyBodyParser);
 app.get('/', function (req, res) {
-
   res.send("<h1>Hello</h1>");
 });
 
-app.listen(4000, (err) => {
+app.listen(7000, (err) => {
   if (err) console.log(err);
   console.log("working");
 });
